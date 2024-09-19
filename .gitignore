@@ -1,2 +1,5 @@
 node_modules/
 build/
+*.patch
+package-lock.json
+package.json

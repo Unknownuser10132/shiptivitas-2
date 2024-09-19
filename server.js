@@ -2,6 +2,9 @@ import express from 'express';
 import Database from 'better-sqlite3';
 
 const app = express();
+app.listen(3000, () => {
+  console.log('app running on port 3000');
+});
 
 app.use(express.json());
 
@@ -131,6 +134,3 @@ app.put('/api/v1/clients/:id', (req, res) => {
 
   return res.status(200).send(clients);
 });
-
-app.listen(3001);
-console.log('app running on port ', 3001);
